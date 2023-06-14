@@ -1,0 +1,58 @@
+python Detect_loan.py \
+  --project=streaming-data-loan-pubsub \
+  --region=us-east1 \
+  --input_subscription_card=projects/streaming-data-loan-pubsub/subscriptions/Card\
+  --input_subscription_loan=projects/streaming-data-loan-pubsub/subscriptions/Loan\
+  --output_table=stunning-shadow-389813.loan_detection.loan \
+  --runner=DataflowRunner \
+  --temp_location=gs://streaming-loan-data-pubsub/temp \
+  --num_workers=1 \
+  --max_num_workers=1 \
+  --experiment=use_unsupported_python_version
+
+[
+  {
+    "mode": "NULLABLE",
+    "name": "Customer_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Fraud_points",
+    "type": "STRING"
+  }
+]
+
+[
+  {
+    "mode": "NULLABLE",
+    "name": "player_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "weapon",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "kill_pattern",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "average_score",
+    "type": "STRING"
+  }
+]
+
+python Dataflow_pipeline.py \
+  --project=studied-bounty-389807 \
+  --region=us-east1 \
+  --input_subscription=projects/studied-bounty-389807/subscriptions/weapon-average-score \
+  --output_table=studied-bounty-389807.weapon_average_score.weapon_score \
+  --runner=DataflowRunner \
+  --temp_location=gs://streaming-game-data-pubsub/temp \
+  --num_workers=1 \
+  --max_num_workers=1 \
+  --experiment=use_unsupported_python_version
