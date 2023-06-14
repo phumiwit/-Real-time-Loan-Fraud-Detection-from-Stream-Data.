@@ -38,5 +38,5 @@
 
 # การเตรียมการในทำโปรเจค
 1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform 
-<img src = 'images/8.PNG'>
+<img src = 'image/8.PNG'>
 
