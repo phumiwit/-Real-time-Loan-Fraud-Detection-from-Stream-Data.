@@ -7,7 +7,7 @@
 
 # ตัวอย่างข้อมูลทีทำการ Generate ขึ้น
 ข้อมูลที่ Generate ทำการ Generate ขึ้นจาก 2 ที่ซึ่ง Generate จากไฟล์ Generate_loan_data.py คือ \
-1.Card data เป็นข้อมูลต่างๆของ Card ซึ่งมีจำนวน 8 Columns คือ:\
+1. Card data เป็นข้อมูลต่างๆของ Card ซึ่งมีจำนวน 8 Columns คือ:\
  1.1 Customer_id ซึ่งคือ unique customer identification ของเจ้าของบัตร \
  1.2 Relationship_no คือ Relationship number of Card \
  1.3 Card_type คือประเภทของบัตรซึ่งมี 8 ประเภทคือ 1.Issuers 2.AccountNow_Prepaid_Cards 3.MasterCard 4.Discover 5.Capital_One 6.American_Express 7.Network 
