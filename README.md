@@ -7,7 +7,7 @@
 
 # ตัวอย่างข้อมูลทีทำการ Generate ขึ้น
 ข้อมูลที่ Generate ทำการ Generate ขึ้นจาก 2 ที่ซึ่ง Generate จากไฟล์ Generate_loan_data.py คือ \
-1. Card data เป็นข้อมูลต่างๆของ Card ซึ่งมีจำนวน 8 Columns คือ:\
+1. Card data เป็นข้อมูลต่างๆของ Card ซึ่งมีจำนวน 8 Columns คือ \
  1.1 Customer_id ซึ่งคือ unique customer identification ของเจ้าของบัตร \
  1.2 Relationship_no คือ Relationship number of Card \
  1.3 Card_type คือประเภทของบัตรซึ่งมี 8 ประเภทคือ 1.Issuers 2.AccountNow_Prepaid_Cards 3.MasterCard 4.Discover 5.Capital_One 6.American_Express 7.Network 
@@ -17,7 +17,7 @@
  1.6 Cash_withdrwn คือ จำนวนเงินที่ customer ถอน ใน 1 เดือนจากตู้ ATM ซึ่งรวมอยู่ใน Total_Spent เรียบร้อย \
  1.7 Cleared_amount คือ การชำระค่าใช้จ่ายของ customer ใน 1 เดือน\
  1.8 Last_date คือ วันสุดท้ายของเดือนและเป็นวัยสุดท้ายในการชำระเงินนั่นเอง โดยกำหนดทุกปีเป็น 2019 \  
-2.Loan data เป็นข้อมูลเงินกู้ของ customer ต่างๆซึ่งมี 7 Columns คือ\
+2. Loan data เป็นข้อมูลเงินกู้ของ customer ต่างๆซึ่งมี 7 Columns คือ\
  2.1 Customer_id คือ unique identification ของเจ้าของบัตร \
  2.2 Customer_category คือ หมวดหมู่ของ customer ซึ่งมี 5 ประเภทคือ 1.Serviceman 2.Businessman 3.Student 4.Others 5.Self \
  2.3 Loan_id คือ  unique loan identification ของ customer นั้นๆ \
