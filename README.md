@@ -94,10 +94,10 @@ Example.
 </div>
 
 จะได้ตัวอย่างข้อมูลคือที่ generateขึ้นมาดังนี้  
-1.ข้อมูลที่ generate ไป Card topic
+1.ตัวอย่างข้อมูลที่ generate ไป Card topic
 <img src = 'image/11.PNG'>
 
-2.ข้อมูลที่ generate ไป Loan topic
+2.ตัวอย่างข้อมูลที่ generate ไป Loan topic
 <img src = 'image/10.PNG'>
 
 3.สร้าง Dataflow ขึ้นมาโดยใช้คำสั่งบน cloud shell
@@ -116,5 +116,10 @@ Example.
   --experiment=use_unsupported_python_version
   </code></pre>
 </div>
+
+4.รอสักพักใหญ่ๆ เพื่อประมวลผล \
+5.ตัวอย่างข้อมูลที่บันทึกลงไปใน Bigquery
+<img src = 'image/26.PNG'>
+
 
 
