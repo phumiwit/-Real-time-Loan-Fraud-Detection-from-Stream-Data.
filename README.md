@@ -17,7 +17,7 @@
  1.6 Cash_withdrwn คือ จำนวนเงินที่ customer ถอน ใน 1 เดือนจากตู้ ATM ซึ่งรวมอยู่ใน Total_Spent เรียบร้อย \
  1.7 Cleared_amount คือ การชำระค่าใช้จ่ายของ customer ใน 1 เดือน \
  1.8 Last_date คือ วันสุดท้ายของเดือนและเป็นวัยสุดท้ายในการชำระเงินนั่นเอง โดยกำหนดทุกปีเป็น 2019   
-2. Loan data เป็นข้อมูลเงินกู้ของ customer ต่างๆซึ่งมี 7 Columns คือ\
+2. Loan data เป็นข้อมูลเงินกู้ของ customer ต่างๆซึ่งมี 7 Columns คือ \
  2.1 Customer_id คือ unique identification ของเจ้าของบัตร \
  2.2 Customer_category คือ หมวดหมู่ของ customer ซึ่งมี 5 ประเภทคือ 1.Serviceman 2.Businessman 3.Student 4.Others 5.Self \
  2.3 Loan_id คือ  unique loan identification ของ customer นั้นๆ \
@@ -32,14 +32,14 @@
 1.2 กำหนดให้ customer ได้รับ 1 คะแนนในกรณีที่ลูกค้าใช้จ่ายจำนวนเต็มของวงเงินสูงสุดของเขา แต่ไม่ชำระเต็มจำนวนที่ครบกำหนด \
 1.3 หาก customer ตรงตามทั้งสองเงื่อนไขด้านบนในเดือนใดๆ กำหนดให้ลูกค้าได้รับ 1 คะแนนเพิ่มเติม \
 2. Loan defaulter requirements:\
-2.1 สำหรับประเภทสินเชื่อบุคคล (personal loan) ธนาคารไม่ยอมรับการชำระเงินไม่ครบตามกำหนดหรือชำระเกินกำหนดเวลา 
-2.2 ถ้า customer ไม่ได้ชำระเงินผิดกำหนดทั้งหมด 4 งวดขึ้นไป หรือไม่ได้ชำระเงินผิดกำหนดติดต่อกัน 2 งวด จะถือว่าเป็นผู้กู้ที่ไม่ชำระเงินสินเชื่อส่วนบุคคลตามกำหนด
+2.1 สำหรับประเภทสินเชื่อบุคคล (personal loan) ธนาคารไม่ยอมรับการชำระเงินไม่ครบตามกำหนดหรือชำระเกินกำหนดเวลา \
+2.2 ถ้า customer ไม่ได้ชำระเงินผิดกำหนดทั้งหมด 4 งวดขึ้นไป หรือไม่ได้ชำระเงินผิดกำหนดติดต่อกัน 2 งวด จะถือว่าเป็นผู้กู้ที่ไม่ชำระเงินสินเชื่อส่วนบุคคลตามกำหนด \
 
 # การเตรียมการในทำโปรเจค
 1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform  \
-<img src = 'image/8.PNG'> \
+<img src = 'image/8.PNG'> 
 2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา \
-<img src = 'image/9.PNG'> \
+<img src = 'image/9.PNG'> 
 3. uploadfile Generate_loan_data.py บน Cloud Shell Editor \
 4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor  \
 <div align="center"> \
