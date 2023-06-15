@@ -43,12 +43,12 @@
 <img src = 'image/9.PNG'>
 3. uploadfile Generate_loan_data.py 
 4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor
-<pre>
-```
- python Generate_loan_data.py
-```
-</pre>
 
+<div align="center">
+  <h3>Run the script</h3>
+  <p>Copy and paste the following command in your terminal to run the script:</p>
+  <pre><code>python Generate_loan_data.py</code></pre>
+</div>
 
 
 
