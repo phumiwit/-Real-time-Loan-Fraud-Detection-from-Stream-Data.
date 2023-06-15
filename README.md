@@ -105,7 +105,7 @@ Example.
   <pre><code>
    python Detect_loan.py \
   --project= (your projectid) \
-  --region=us-east1 \
+  --region=(your region) \
   --input_subscription_card=projects/(your projectid)/subscriptions/Card\
   --input_subscription_loan=projects/(your projectid)/subscriptions/Loan\
   --output_table=(your projectid).(your dataset).(your table) \
