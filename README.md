@@ -89,7 +89,14 @@ Example.
 
 # เริ่มต้นโปรเจค
 1. ทำการ run Generate_loan_data.py บน Cloud Shell Editor
+<div align="center"> 
+  <pre><code>python Generate_loan_data.py</code></pre>
+</div>
+จะได้ตัวอย่างข้อมูลคือที่ generateขึ้นมาดังนี้ \
+1. ข้อมูลที่ generate ไป Card topic
+<img src = 'image/11.PNG'>
 
-<img src = 'image/27.PNG'>
+2. ข้อมูลที่ generate ไป Loan topic
+<img src = 'image/10.PNG'>
 
 
