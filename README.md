@@ -42,12 +42,8 @@
 2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
 <img src = 'image/9.PNG'>
 
-3. uploadfile Generate_loan_data.py บน Cloud Shell Editor 
- 
-<div align="center"> 
-  <pre><code>python Generate_loan_data.py</code></pre>
-</div>
-4. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
+3. uploadfile Generate_loan_data.py บน Cloud Shell Editor \
+ 4. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
 และมีจำนวน 4 Columns ดังนี้ \
 <img src = 'image/21.PNG'>
 
@@ -88,7 +84,12 @@
 Example.
 <img src = 'image/6.PNG'>
 
-6. Enable Dataflow API \
+6. Enable Dataflow API 
+<img src = 'image/27.PNG'>
+
+# เริ่มต้นโปรเจค
+1. ทำการ run Generate_loan_data.py บน Cloud Shell Editor
+
 <img src = 'image/27.PNG'>
 
 
