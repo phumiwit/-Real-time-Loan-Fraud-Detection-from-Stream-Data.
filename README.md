@@ -39,7 +39,9 @@
 # การเตรียมการในทำโปรเจค
 1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform \
 <img src = 'image/8.PNG'>
+
 2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา \
 <img src = 'image/9.PNG'>
+
 3. uploadfile Generate_loan_data.py \
 4. 
