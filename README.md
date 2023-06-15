@@ -43,11 +43,11 @@
 <img src = 'image/9.PNG'>
 
 3. uploadfile Generate_loan_data.py บน Cloud Shell Editor 
-4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor 
+ 
 <div align="center"> 
   <pre><code>python Generate_loan_data.py</code></pre>
 </div>
-5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
+4. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
 และมีจำนวน 4 Columns ดังนี้ \
 <img src = 'image/21.PNG'>
 
@@ -84,8 +84,11 @@
    </code></pre>
 </div>
 
-6.สร้าง cloud storage สำหรับเก็บข้อมูล temp \
+5.สร้าง cloud storage สำหรับเก็บข้อมูล temp \
 Example.
+<img src = 'image/6.PNG'>
+
+6. Enable Dataflow API \
 <img src = 'image/6.PNG'>
 
 
