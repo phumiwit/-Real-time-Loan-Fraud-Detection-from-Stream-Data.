@@ -42,7 +42,7 @@
 2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
 <img src = 'image/9.PNG'>
 
-3. uploadfile Generate_loan_data.py บน Cloud Shell Editor 
+3. uploadfile Generate_loan_data.py และ Detect_loan.py บน Cloud Shell Editor 
  4. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
 และมีจำนวน 4 Columns ดังนี้ 
 <img src = 'image/21.PNG'>
@@ -100,17 +100,17 @@ Example.
 2.ข้อมูลที่ generate ไป Loan topic
 <img src = 'image/10.PNG'>
 
-3.สร้าง Dataflow ขึ้นมาโดยใช้คำสั่ง
+3.สร้าง Dataflow ขึ้นมาโดยใช้คำสั่งบน cloud shell
 <div align="left"> 
   <pre><code>
    python Detect_loan.py \
-  --project=peaceful-surge-389914 \
+  --project= (your projectid) \
   --region=us-east1 \
-  --input_subscription_card=projects/peaceful-surge-389914/subscriptions/Card\
-  --input_subscription_loan=projects/peaceful-surge-389914/subscriptions/Loan\
-  --output_table=peaceful-surge-389914.loan_detection.loan \
+  --input_subscription_card=projects/(your projectid)/subscriptions/Card\
+  --input_subscription_loan=projects/(your projectid)/subscriptions/Loan\
+  --output_table=(your projectid).(your dataset).(your table) \
   --runner=DataflowRunner \
-  --temp_location=gs://streaming-data-loanstreaming-data-card-loan/temp \
+  --temp_location=gs://(your cloud storage)/temp \
   --num_workers=1 \
   --max_num_workers=1 \
   --experiment=use_unsupported_python_version
