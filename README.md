@@ -51,35 +51,35 @@
 และมีจำนวน 4 Columns ดังนี้ \
 <img src = 'image/21.PNG'>
 
-ซึ่ง Column ที่ 1 คือ Customer_id สำหรับบันทึก id ลูกค้า \
+Column ที่ 1 คือ Customer_id สำหรับบันทึก id ลูกค้า \
 Column ที่ 2 คือ Card_Defaulter_Fraud_points สำหรับบันทึกคะแนน Fraud_points ของ customer_id ที่ตรง requiements ของ Credit Card defaulter \
 Column ที่ 3 คือ Personal_Loan_Defaulter_Consecutive_Missing สำหรับบันทึกคะแนน Consecutive_Missing ซึ่งคือ \
 จำนวนครั้งที่ขาดการชำระเงินติดต่อกันนับเป็น 1 เดือน 1 ครั้งตาม Loan defaulter requirements \
 Column ที่ 4 คือ Both_Defaulters ซึ่งขะเป็น yes เมื่อ 2 เงื่อนไขตรง requirements ของทั้ง Credit Card defaulter และ Loan defaulter \
 schema ของ table
 <div align="center"> 
-  <pre><code>
-   [
-  {
-    "mode": "NULLABLE",
-    "name": "Customer_id",
-    "type": "STRING"
-  },
-  {
-    "mode": "NULLABLE",
-    "name": "Card_Defaulter_Fraud_points",
-    "type": "STRING"
-  },
-  {
-    "mode": "NULLABLE",
-    "name": "Personal_Loan_Defaulter_Consecutive_Missing",
-    "type": "STRING"
-  },
-  {
-    "mode": "NULLABLE",
-    "name": "Both_Defaulters",
-    "type": "STRING"
-  }
+<pre><code>
+[
+ {
+  "mode": "NULLABLE",
+  "name": "Customer_id",
+  "type": "STRING"
+ },
+ {
+  "mode": "NULLABLE",
+  "name": "Card_Defaulter_Fraud_points",
+  "type": "STRING"
+ },
+ {
+  "mode": "NULLABLE",
+  "name": "Personal_Loan_Defaulter_Consecutive_Missing",
+  "type": "STRING"
+ },
+ {
+  "mode": "NULLABLE",
+  "name": "Both_Defaulters",
+  "type": "STRING"
+ }
 ]
    </code></pre>
 </div>
