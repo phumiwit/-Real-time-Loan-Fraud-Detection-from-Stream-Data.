@@ -92,11 +92,11 @@ Example.
 <div align="center"> 
   <pre><code>python Generate_loan_data.py</code></pre>
 </div>
-จะได้ตัวอย่างข้อมูลคือที่ generateขึ้นมาดังนี้ \
-1. ข้อมูลที่ generate ไป Card topic
+จะได้ตัวอย่างข้อมูลคือที่ generateขึ้นมาดังนี้ 
+1.ข้อมูลที่ generate ไป Card topic
 <img src = 'image/11.PNG'>
 
-2. ข้อมูลที่ generate ไป Loan topic
+2.ข้อมูลที่ generate ไป Loan topic
 <img src = 'image/10.PNG'>
 
 
