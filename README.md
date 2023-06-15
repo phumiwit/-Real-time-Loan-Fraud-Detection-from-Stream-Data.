@@ -37,9 +37,9 @@
 3.1 ถ้า customer ไม่ได้ชำระเงินผิดกำหนดทั้งหมด 4 งวดขึ้นไป หรือไม่ได้ชำระเงินผิดกำหนดติดต่อกัน 2 งวด จะถือว่าเป็นผู้กู้ที่ไม่ชำระเงินสินเชื่อส่วนบุคคลตามกำหนด
 
 # การเตรียมการในทำโปรเจค
-1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform 
+1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform \
 <img src = 'image/8.PNG'>
-2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา
+2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา \
 <img src = 'image/9.PNG'>
-3. uploadfile Generate_loan_data.py
+3. uploadfile Generate_loan_data.py \
 4. 
