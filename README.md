@@ -15,7 +15,7 @@
  1.4 Max_credit_limit คือ max spent limit ของ customer ใน 1 เดือน \
  1.5 Total_Spent คือ ค่าใช้จ่ายของ customer ใน 1 เดือน \
  1.6 Cash_withdrwn คือ จำนวนเงินที่ customer ถอน ใน 1 เดือนจากตู้ ATM ซึ่งรวมอยู่ใน Total_Spent เรียบร้อย \
- 1.7 Cleared_amount คือ การชำระค่าใช้จ่ายของ customer ใน 1 เดือน\
+ 1.7 Cleared_amount คือ การชำระค่าใช้จ่ายของ customer ใน 1 เดือน \
  1.8 Last_date คือ วันสุดท้ายของเดือนและเป็นวัยสุดท้ายในการชำระเงินนั่นเอง โดยกำหนดทุกปีเป็น 2019 \  
 2. Loan data เป็นข้อมูลเงินกู้ของ customer ต่างๆซึ่งมี 7 Columns คือ\
  2.1 Customer_id คือ unique identification ของเจ้าของบัตร \
