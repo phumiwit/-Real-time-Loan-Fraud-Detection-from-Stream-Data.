@@ -39,11 +39,11 @@
 1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform  
 <img src = 'image/8.PNG'>
 
-3. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
+2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
 <img src = 'image/9.PNG'>
 
-4. uploadfile Generate_loan_data.py บน Cloud Shell Editor \
-5. ทำการ run Generate_loan_data.py บน Cloud Shell Editor \
+3. uploadfile Generate_loan_data.py บน Cloud Shell Editor 
+4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor 
 <div align="center"> 
   <pre><code>python Generate_loan_data.py</code></pre>
 </div>
