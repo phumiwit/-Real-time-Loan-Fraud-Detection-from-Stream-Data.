@@ -42,9 +42,9 @@
 2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
 <img src = 'image/9.PNG'>
 
-3. uploadfile Generate_loan_data.py บน Cloud Shell Editor \
+3. uploadfile Generate_loan_data.py บน Cloud Shell Editor 
  4. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
-และมีจำนวน 4 Columns ดังนี้ \
+และมีจำนวน 4 Columns ดังนี้ 
 <img src = 'image/21.PNG'>
 
  Column ที่ 1 คือ Customer_id สำหรับบันทึก id ลูกค้า \
