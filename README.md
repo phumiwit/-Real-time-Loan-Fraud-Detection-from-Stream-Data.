@@ -45,8 +45,8 @@
 <div align="center"> 
   <pre><code>python Generate_loan_data.py</code></pre>
 </div>
-5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
-และมี จำนวน Column 4 Columns ดังนี้ 
+5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป \
+และมี จำนวน Column 4 Columns ดังนี้ \
 <img src = 'image/21.PNG'>
 ซึ่ง Column ที่ 1 คือ Customer_id สำหรับบันทึก id ลูกค้า \
 Column ที่ 2 คือ Card_Defaulter_Fraud_points สำหรับบันทึกคะแนน Fraud_points ของ customer_id ที่ตรง requiements ของ Credit Card defaulter \
