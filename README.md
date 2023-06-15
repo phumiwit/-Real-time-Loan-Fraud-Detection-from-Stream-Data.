@@ -37,9 +37,35 @@
 3.1 ถ้า customer ไม่ได้ชำระเงินผิดกำหนดทั้งหมด 4 งวดขึ้นไป หรือไม่ได้ชำระเงินผิดกำหนดติดต่อกัน 2 งวด จะถือว่าเป็นผู้กู้ที่ไม่ชำระเงินสินเชื่อส่วนบุคคลตามกำหนด
 
 # การเตรียมการในทำโปรเจค
-1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform \
+1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform 
 <img src = 'image/8.PNG'>
-2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา \
+2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
 <img src = 'image/9.PNG'>
-3. uploadfile Generate_loan_data.py \
-4. 
+3. uploadfile Generate_loan_data.py 
+4. ทำการ run Generate_loan_data.py
+<pre>
+```python
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+
+    def say_hello(self):
+        print("Hello, " + self.name)
+
+obj = MyClass("John")
+obj.say_hello()
+```
+</pre>
+When you include this code snippet in your README.md file, GitHub will display it as a formatted code block, and users will be able to copy the code by clicking on the "Copy" button in the top-right corner of the code block.
+
+Make sure to replace the example code with your own code.
+
+Remember to enclose the code block in triple backticks and specify the appropriate language for syntax highlighting if desired. This helps to improve the readability and presentation of your code in the README file.
+
+
+
+
+
+
+
+6. 
