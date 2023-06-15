@@ -37,17 +37,20 @@
 
 # การเตรียมการในทำโปรเจค
 1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform  
-<img src = 'image/8.PNG'> 
-2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา
-<img src = 'image/9.PNG'> 
-3. uploadfile Generate_loan_data.py บน Cloud Shell Editor \
-4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor
+<img src = 'image/8.PNG'>
+
+3. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
+<img src = 'image/9.PNG'>
+
+4. uploadfile Generate_loan_data.py บน Cloud Shell Editor \
+5. ทำการ run Generate_loan_data.py บน Cloud Shell Editor \
 <div align="center"> 
   <pre><code>python Generate_loan_data.py</code></pre>
 </div>
-5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป \
-และมี จำนวน Column 4 Columns ดังนี้ \
+5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
+และมีจำนวน 4 Columns ดังนี้ \
 <img src = 'image/21.PNG'>
+
 ซึ่ง Column ที่ 1 คือ Customer_id สำหรับบันทึก id ลูกค้า \
 Column ที่ 2 คือ Card_Defaulter_Fraud_points สำหรับบันทึกคะแนน Fraud_points ของ customer_id ที่ตรง requiements ของ Credit Card defaulter \
 Column ที่ 3 คือ Personal_Loan_Defaulter_Consecutive_Missing สำหรับบันทึกคะแนน Consecutive_Missing ซึ่งคือ จำนวนครั้งที่ขาดการชำระเงินติดต่อกันนับเป็น 1 เดือน 1 ครั้ง \
