@@ -36,16 +36,16 @@
 2.2 ถ้า customer ไม่ได้ชำระเงินผิดกำหนดทั้งหมด 4 งวดขึ้นไป หรือไม่ได้ชำระเงินผิดกำหนดติดต่อกัน 2 งวด จะถือว่าเป็นผู้กู้ที่ไม่ชำระเงินสินเชื่อส่วนบุคคลตามกำหนด \
 
 # การเตรียมการในทำโปรเจค
-1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform  \
+1. สร้าง Topics ขึ้นมา 2 Topics คือ Card topic และ Loan topic โดยใช้บริการ pub/sub ของ google cloud platform  
 <img src = 'image/8.PNG'> 
-2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา\
+2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา
 <img src = 'image/9.PNG'> 
-3. uploadfile Generate_loan_data.py บน Cloud Shell Editor\
-4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor\
-<div align="center"> \
+3. uploadfile Generate_loan_data.py บน Cloud Shell Editor
+4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor
+<div align="center"> 
   <pre><code>python Generate_loan_data.py</code></pre>
 </div>
-5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป \
+5. ทำการสร้าง Bigquery เพื่อรับข้อมูลโดย Dataset ต้องมี Region เดียวกับ cloud storage ในขั้นตอนถัดไป 
 และมี จำนวน Column 4 Columns ดังนี้ \
 <img src = 'image/21.PNG'>
 ซึ่ง Column ที่ 1 คือ Customer_id สำหรับบันทึก id ลูกค้า \
