@@ -42,20 +42,12 @@
 2. สร้าง subcription ของ Card topic และ Loan topic ขึ้นมา 
 <img src = 'image/9.PNG'>
 3. uploadfile Generate_loan_data.py 
-4. ทำการ run Generate_loan_data.py
-
+4. ทำการ run Generate_loan_data.py บน Cloud Shell Editor
 <pre>
-```python
-class MyClass:
-    def __init__(self, name):
-        self.name = name
-
-    def say_hello(self):
-        print("Hello, " + self.name)
-
-obj = MyClass("John")
-obj.say_hello()
 ```
+ python Generate_loan_data.py
+```
+</pre>
 
 
 
