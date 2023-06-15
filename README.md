@@ -43,6 +43,7 @@
 <img src = 'image/9.PNG'>
 3. uploadfile Generate_loan_data.py 
 4. ทำการ run Generate_loan_data.py
+
 <pre>
 ```python
 class MyClass:
@@ -55,12 +56,6 @@ class MyClass:
 obj = MyClass("John")
 obj.say_hello()
 ```
-</pre>
-When you include this code snippet in your README.md file, GitHub will display it as a formatted code block, and users will be able to copy the code by clicking on the "Copy" button in the top-right corner of the code block.
-
-Make sure to replace the example code with your own code.
-
-Remember to enclose the code block in triple backticks and specify the appropriate language for syntax highlighting if desired. This helps to improve the readability and presentation of your code in the README file.
 
 
 
