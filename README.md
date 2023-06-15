@@ -100,4 +100,21 @@ Example.
 2.ข้อมูลที่ generate ไป Loan topic
 <img src = 'image/10.PNG'>
 
+3.สร้าง Dataflow ขึ้นมาโดยใช้คำสั่ง
+<div align="left"> 
+  <pre><code>
+   python Detect_loan.py \
+  --project=peaceful-surge-389914 \
+  --region=us-east1 \
+  --input_subscription_card=projects/peaceful-surge-389914/subscriptions/Card\
+  --input_subscription_loan=projects/peaceful-surge-389914/subscriptions/Loan\
+  --output_table=peaceful-surge-389914.loan_detection.loan \
+  --runner=DataflowRunner \
+  --temp_location=gs://streaming-data-loanstreaming-data-card-loan/temp \
+  --num_workers=1 \
+  --max_num_workers=1 \
+  --experiment=use_unsupported_python_version
+  </code></pre>
+</div>
+
 
