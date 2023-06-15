@@ -57,7 +57,7 @@ Column ที่ 3 คือ Personal_Loan_Defaulter_Consecutive_Missing สำ�
 จำนวนครั้งที่ขาดการชำระเงินติดต่อกันนับเป็น 1 เดือน 1 ครั้งตาม Loan defaulter requirements \
 Column ที่ 4 คือ Both_Defaulters ซึ่งขะเป็น yes เมื่อ 2 เงื่อนไขตรง requirements ของทั้ง Credit Card defaulter และ Loan defaulter \
 schema ของ table
-<div align="center"> 
+<div align="left"> 
 <pre><code>
 [
  {
