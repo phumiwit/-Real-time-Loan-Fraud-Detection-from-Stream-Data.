@@ -83,6 +83,7 @@
 ]
    </code></pre>
 </div>
+
 6.สร้าง cloud storage สำหรับเก็บข้อมูล temp \
 Ex.
 <img src = 'image/6.PNG'>
