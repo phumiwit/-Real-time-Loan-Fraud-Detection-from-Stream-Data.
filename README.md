@@ -89,6 +89,6 @@ Example.
 <img src = 'image/6.PNG'>
 
 6. Enable Dataflow API \
-<img src = 'image/6.PNG'>
+<img src = 'image/27.PNG'>
 
 
