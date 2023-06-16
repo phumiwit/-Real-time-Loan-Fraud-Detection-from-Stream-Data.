@@ -2,7 +2,7 @@
 โปรเจคนี้จะ detect ข้อมูลแบบ real-time จากสองที่มาคือ Card data และ Loan data ซึ่งจะทำการ generate 
 ข้อมูลและส่งไปที่ topic ที่สร้างไว้ 2 topics คือ Card topic และ Loan topic โดยใช้บริการ global real-time messaging 
 ของ google cloud platform และสร้าง subscription เพื่อรับข้อมูลที่ได้ generate ออกมา 2 topics คือ Card topic 
-และ Loan topic เช่นกัน เพื่อทำการประมวลผลตาม Requirements ที่ได้กำหนดไว้เพื่อตรวจจับการโฉ้โกงเงินกู้และบันทึกลงใน Big query
+และ Loan topic เช่นกัน เพื่อทำการประมวลผลตาม Requirements ที่ได้กำหนดไว้เพื่อตรวจจับการฉ้อโกงเงินกู้และบันทึกลงใน Big query
 เพื่อนำไปวิเคราะห์ข้อมูลต่อไป 
 
 # ตัวอย่างข้อมูลทีทำการ Generate ขึ้น
@@ -51,7 +51,7 @@
  Column ที่ 2 คือ Card_Defaulter_Fraud_points สำหรับบันทึกคะแนน Fraud_points ของ customer_id ที่ตรง requiements ของ Credit Card defaulter \
  Column ที่ 3 คือ Personal_Loan_Defaulter_Consecutive_Missing สำหรับบันทึกคะแนน Consecutive_Missing ซึ่งคือ \
  จำนวนครั้งที่ขาดการชำระเงินติดต่อกันนับเป็น 1 เดือน 1 ครั้งตาม Loan defaulter requirements \
- Column ที่ 4 คือ Both_Defaulters ซึ่งขะเป็น yes เมื่อ 2 เงื่อนไขตรง requirements ของทั้ง Credit Card defaulter และ Loan defaulter \
+ Column ที่ 4 คือ Both_Defaulters ซึ่งจะเป็น yes เมื่อ 2 เงื่อนไขตรง requirements ของทั้ง Credit Card defaulter และ Loan defaulter ถ้าไม่ตรงทั้งสองเงื่อนไขจะเป็น No\
  schema ของ table
 <div align="left"> 
 <pre><code>
@@ -94,13 +94,13 @@ Example.
 </div>
 
 จะได้ตัวอย่างข้อมูลคือที่ generateขึ้นมาดังนี้  
-1.ตัวอย่างข้อมูลที่ generate ไป Card topic
+1.1 ตัวอย่างข้อมูลที่ generate ไป Card topic
 <img src = 'image/11.PNG'>
 
-2.ตัวอย่างข้อมูลที่ generate ไป Loan topic
+1.2 ตัวอย่างข้อมูลที่ generate ไป Loan topic
 <img src = 'image/10.PNG'>
 
-3.สร้าง Dataflow ขึ้นมาโดยใช้คำสั่งบน cloud shell
+2.สร้าง Dataflow ขึ้นมาโดยใช้คำสั่งบน cloud shell
 <div align="left"> 
   <pre><code>
    python Detect_loan.py \
@@ -117,9 +117,10 @@ Example.
   </code></pre>
 </div>
 
-4.รอสักพักใหญ่ๆ เพื่อประมวลผล \
-5.ตัวอย่างข้อมูลที่บันทึกลงไปใน Bigquery
+3.รอสักพักใหญ่ๆ เพื่อประมวลผล \
+4. ตัวอย่างข้อมูลที่บันทึกลงไปใน Bigquery
 <img src = 'image/26.PNG'>
-
+5. 
+<img src = 'image/15.PNG'>
 
 
