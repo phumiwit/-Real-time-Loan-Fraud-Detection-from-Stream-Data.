@@ -116,6 +116,12 @@ Example.
   --experiment=use_unsupported_python_version
   </code></pre>
 </div>
+จะได้ Dataflow pipeline ขึ้นมาดังนี้ 
+
+<img src = 'image/22.PNG'>
+<img src = 'image/23.PNG'>
+<img src = 'image/24.PNG'>
+<img src = 'image/25.PNG'>
 
 3.รอสักพักใหญ่ๆ เพื่อประมวลผล \
 4. ตัวอย่างข้อมูลที่บันทึกลงไปใน Bigquery
