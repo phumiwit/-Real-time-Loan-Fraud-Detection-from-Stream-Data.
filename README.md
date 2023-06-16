@@ -80,7 +80,7 @@
    </code></pre>
 </div>
 
-5.สร้าง cloud storage สำหรับเก็บข้อมูล temp \
+5.สร้าง cloud storage สำหรับเก็บข้อมูลและ folder temp \
 Example.
 <img src = 'image/6.PNG'>
 
